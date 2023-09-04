@@ -26,16 +26,6 @@ function Login() {
     }
   }
 
-  
-  
-  // const handleLogin = async () => {
-  //   try {
-  //     await signInWithEmailAndPassword(firebaseAuth, email, password);
-  //   } catch (error) {
-  //     console.log(error.code);
-  //   }
-  // };
-
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) navigate("/");
   });
