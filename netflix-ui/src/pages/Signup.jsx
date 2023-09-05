@@ -31,7 +31,7 @@ function Signup() {
   });
 
   return (
-    <Container showPassword={showPassword}>
+    <Container $showPassword={showPassword}>
       <BackgroundImage />
       <div className="content">
         <Header login />
@@ -104,8 +104,8 @@ const Container = styled.div`
       }
       .form {
         display: grid;
-        grid-template-columns: ${({ showPassword }) =>
-          showPassword ? "1fr 1fr" : "2fr 1fr"};
+        grid-template-columns: ${({ $showPassword }) =>
+          $showPassword ? "1fr 1fr" : "2fr 1fr"};
         width: 60%;
         input {
           color: black;

@@ -26,7 +26,7 @@ function MoviePage() {
 
   useEffect(() => {
     if (genresLoaded) {
-      dispatch(fetchMovies({ genres, type: "movie" }));
+      dispatch(fetchMovies({ genres, type: "movies" }));
     }
   }, [genresLoaded]);
 
